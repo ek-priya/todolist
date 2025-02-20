@@ -1,9 +1,9 @@
 :root{
-    --background:#101114;
-    --primary-color:#1C1D20;
-    --secondary-color:#4A4D57;
-    --accent-color:#00FFC4;
-    --text-color:#F9F9F9;
+    --background:rgb(2,27,26);
+    --primary-color:rgb(23,135,109);
+    --secondary-color:rgb(9,85,68);
+    --accent-color:rgb(44,194,149);
+    --text-color:rgb(241,247,246);
 }
 *{
     margin:0;
@@ -107,13 +107,13 @@ form{
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
-    transition: 200ms ease;
+    transition: 200ms ease; 
     cursor: pointer;
 }
 input[type="checkbox"]:checked ~ .custom-checkbox{
     background-color:var(--accent-color);
 }
-input[type="checkbox"]:checked ~ .custom-checkbox{
+input[type="checkbox"]:checked ~ .custom-checkbox svg{
     fill:var(--primary-color);
 }
 input[type="checkbox"]:checked ~ .todo-text{
